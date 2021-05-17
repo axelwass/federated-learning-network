@@ -89,13 +89,13 @@ class Server:
                     if training_client.status == ClientTrainingStatus.TRAINING_FINISHED:
                         received_weights.append(training_client.model_params[0])
                         received_biases.append(training_client.model_params[1])
-                        recived_params = torch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,training_client.model_params[0].tolist()), training_client.model_params[1].tolist()]))
-                        server_params = torch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,self.mnist_model_params[0].tolist()), self.mnist_model_params[1].tolist()]))
+                        recived_params = torch.FloatTensor(reduce(operator.concat, [training_client.model_params[0].tolist(), training_client.model_params[1].tolist()]))
+                        server_params = torch.FloatTensor(reduce(operator.concat, [self.mnist_model_params[0].tolist(), self.mnist_model_params[1].tolist()]))
                         print("Distances:")
                         print("CosineSimilarity:",self.cos(recived_params, server_params).tolist())
                         print("Norm 1:", torch.cdist(recived_params.reshape(1,-1),server_params.reshape(1,-1),p=1))
                         print("Norm 2:", torch.cdist(recived_params.reshape(1,-1),server_params.reshape(1,-1),p=2))
-                        print("Norm inf:", torch.cdist(recived_params.reshape(1,-1),server_params.reshape(1,-1),p=float('inf'))
+                        print("Norm inf:", torch.cdist(recived_params.reshape(1,-1),server_params.reshape(1,-1),p=float('inf')))
                         training_client.status = ClientTrainingStatus.IDLE
                 new_weights = torch.stack(received_weights).mean(0)
                 new_bias = torch.stack(received_biases).mean(0)

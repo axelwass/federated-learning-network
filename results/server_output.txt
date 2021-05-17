@@ -1,0 +1,274 @@
+ * Serving Flask app "__init__.py"
+ * Environment: development
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+172.17.0.1 - - [17/May/2021 14:25:21] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:21] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:23] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:25] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:26] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:27] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:28] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:28] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:29] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:30] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/bootstrap/bootstrap.min.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/jquery/jquery-3.5.1.slim.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/fontawesome/all.min.js HTTP/1.1" 304 -
+172.17.0.1 - - [17/May/2021 14:25:31] "GET /static/js/dashboard.js HTTP/1.1" 304 -
+Request POST /client for client_url [ http://172.17.0.3:5000 ]
+Registering new training client [ http://172.17.0.3:5000 ]
+Client [ http://172.17.0.3:5000 ] registered successfully
+172.17.0.3 - - [17/May/2021 14:25:31] "POST /client HTTP/1.1" 201 -
+Request POST /client for client_url [ http://172.17.0.4:5000 ]
+Registering new training client [ http://172.17.0.4:5000 ]
+Client [ http://172.17.0.4:5000 ] registered successfully
+172.17.0.4 - - [17/May/2021 14:25:31] "POST /client HTTP/1.1" 201 -
+Request POST /client for client_url [ http://172.17.0.5:5000 ]
+Registering new training client [ http://172.17.0.5:5000 ]
+Client [ http://172.17.0.5:5000 ] registered successfully
+172.17.0.5 - - [17/May/2021 14:25:31] "POST /client HTTP/1.1" 201 -
+172.17.0.1 - - [17/May/2021 14:25:32] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:32] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:25:38] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:38] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Request POST /training
+There are 3 clients registered
+Requesting training to clients...
+Requesting training to client http://172.17.0.3:5000/training
+Requesting training to client http://172.17.0.4:5000/training
+Requesting training to client http://172.17.0.5:5000/training
+Request PUT /model_params for client_url [ http://172.17.0.4:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.4:5000
+172.17.0.4 - - [17/May/2021 14:25:39] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.4:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.5:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.5:5000
+172.17.0.5 - - [17/May/2021 14:25:39] "PUT /model_params HTTP/1.1" 200 -
+172.17.0.3 - - [17/May/2021 14:25:39] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.5:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.3:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.3:5000
+Updating global model params
+Distances:
+CosineSimilarity: 0.9999204874038696
+Norm 1: tensor([[5.2281]])
+Norm 2: tensor([[0.3473]])
+Norm inf: tensor([[0.0539]])
+Distances:
+CosineSimilarity: 0.9999744892120361
+Norm 1: tensor([[2.9227]])
+Norm 2: tensor([[0.1972]])
+Norm inf: tensor([[0.0315]])
+Distances:
+CosineSimilarity: 0.9998414516448975
+Norm 1: tensor([[7.1257]])
+Norm 2: tensor([[0.4907]])
+Norm inf: tensor([[0.0756]])
+Model weights for MNIST updated in central model
+Client http://172.17.0.3:5000 started training
+172.17.0.1 - - [17/May/2021 14:25:39] "POST /training HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:40] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:25:40] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Request POST /training
+There are 3 clients registered
+Requesting training to clients...
+Requesting training to client http://172.17.0.3:5000/training
+Requesting training to client http://172.17.0.4:5000/training
+Requesting training to client http://172.17.0.5:5000/training
+Request PUT /model_params for client_url [ http://172.17.0.4:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.4:5000
+172.17.0.4 - - [17/May/2021 14:26:20] "PUT /model_params HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:20] "GET / HTTP/1.1" 200 -
+Client http://172.17.0.4:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.3:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.3:5000
+172.17.0.3 - - [17/May/2021 14:26:20] "PUT /model_params HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:20] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Client http://172.17.0.3:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.5:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.5:5000
+Updating global model params
+Distances:
+CosineSimilarity: 1.0
+Norm 1: tensor([[9.3132e-09]])
+Norm 2: tensor([[6.5854e-09]])
+Norm inf: tensor([[4.6566e-09]])
+Distances:
+CosineSimilarity: 0.999997615814209
+Norm 1: tensor([[0.8667]])
+Norm 2: tensor([[0.0602]])
+Norm inf: tensor([[0.0096]])
+Distances:
+CosineSimilarity: 0.9999693632125854
+Norm 1: tensor([[2.8406]])
+Norm 2: tensor([[0.2153]])
+Norm inf: tensor([[0.0334]])
+Model weights for MNIST updated in central model
+172.17.0.5 - - [17/May/2021 14:26:20] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.5:5000 started training
+172.17.0.1 - - [17/May/2021 14:26:20] "POST /training HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:21] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:21] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Request POST /training
+There are 3 clients registered
+Requesting training to clients...
+Requesting training to client http://172.17.0.3:5000/training
+Requesting training to client http://172.17.0.4:5000/training
+Requesting training to client http://172.17.0.5:5000/training
+Request PUT /model_params for client_url [ http://172.17.0.3:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.3:5000
+172.17.0.3 - - [17/May/2021 14:26:26] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.3:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.5:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.5:5000
+172.17.0.5 - - [17/May/2021 14:26:27] "PUT /model_params HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:27] "GET / HTTP/1.1" 200 -
+Client http://172.17.0.5:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.4:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.4:5000
+Updating global model params
+Distances:
+CosineSimilarity: 0.9999953508377075
+Norm 1: tensor([[1.1863]])
+Norm 2: tensor([[0.0839]])
+Norm inf: tensor([[0.0128]])
+Distances:
+CosineSimilarity: 0.9999962449073792
+Norm 1: tensor([[0.9687]])
+Norm 2: tensor([[0.0758]])
+Norm inf: tensor([[0.0121]])
+Distances:
+CosineSimilarity: 0.9999960064888
+Norm 1: tensor([[1.1246]])
+Norm 2: tensor([[0.0776]])
+Norm inf: tensor([[0.0099]])
+Model weights for MNIST updated in central model
+172.17.0.4 - - [17/May/2021 14:26:27] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.4:5000 started training
+172.17.0.1 - - [17/May/2021 14:26:27] "POST /training HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:27] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:26:28] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:26:28] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:00] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:00] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:02] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:02] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:03] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:03] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:05] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:05] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:06] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:06] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:08] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:08] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:09] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:09] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:10] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:11] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:12] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:12] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Request POST /client for client_url [ http://172.17.0.6:5000 ]
+Registering new training client [ http://172.17.0.6:5000 ]
+Client [ http://172.17.0.6:5000 ] registered successfully
+172.17.0.6 - - [17/May/2021 14:28:13] "POST /client HTTP/1.1" 201 -
+172.17.0.1 - - [17/May/2021 14:28:13] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:14] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+Request POST /training
+There are 4 clients registered
+Requesting training to clients...
+Requesting training to client http://172.17.0.3:5000/training
+Requesting training to client http://172.17.0.4:5000/training
+Requesting training to client http://172.17.0.5:5000/training
+Requesting training to client http://172.17.0.6:5000/training
+Request PUT /model_params for client_url [ http://172.17.0.4:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.4:5000
+172.17.0.4 - - [17/May/2021 14:28:19] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.4:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.5:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.5:5000
+172.17.0.5 - - [17/May/2021 14:28:20] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.5:5000 started training
+Request PUT /model_params for client_url [ http://172.17.0.6:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.6:5000
+172.17.0.6 - - [17/May/2021 14:28:20] "PUT /model_params HTTP/1.1" 200 -
+Request PUT /model_params for client_url [ http://172.17.0.3:5000 ] and training type: MNIST
+Model params received length: 2
+New model params received from client http://172.17.0.3:5000
+Updating global model params
+Distances:
+Client http://172.17.0.6:5000 started training
+CosineSimilarity: 0.9999760985374451
+Norm 1: tensor([[2.8907]])
+Norm 2: tensor([[0.1906]])
+Norm inf: tensor([[0.0325]])
+Distances:
+CosineSimilarity: 0.9999995231628418
+Norm 1: tensor([[0.3557]])
+Norm 2: tensor([[0.0287]])
+Norm inf: tensor([[0.0043]])
+Distances:
+CosineSimilarity: 0.9999986886978149
+Norm 1: tensor([[0.6297]])
+Norm 2: tensor([[0.0431]])
+Norm inf: tensor([[0.0068]])
+Distances:
+CosineSimilarity: 0.9991526007652283
+Norm 1: tensor([[15.4334]])
+Norm 2: tensor([[1.1344]])
+Norm inf: tensor([[0.1840]])
+Model weights for MNIST updated in central model
+172.17.0.3 - - [17/May/2021 14:28:20] "PUT /model_params HTTP/1.1" 200 -
+Client http://172.17.0.3:5000 started training
+172.17.0.1 - - [17/May/2021 14:28:20] "POST /training HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:20] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:20] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+172.17.0.1 - - [17/May/2021 14:28:21] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [17/May/2021 14:28:22] "GET /static/fontawesome/all.css HTTP/1.1" 404 -
+
