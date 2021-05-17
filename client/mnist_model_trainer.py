@@ -1,4 +1,6 @@
 from fastai.vision.all import *
+from pathlib import Path
+import os
 
 from .training_utils import mnist_loss, linear_model
 
@@ -46,7 +48,7 @@ class MnistModelTrainer:
 
     def __load_datasets(self):
         print('Loading dataset MNIST_SAMPLE...')
-        path = untar_data(URLs.MNIST_SAMPLE)
+        path = Path('tmp') #untar_data(URLs.MNIST_SAMPLE)
         print('Content of MNIST_SAMPLE:', path.ls())
         print("Content of 'train' directory of MNIST_SAMPLE", (path / 'train').ls())
 
@@ -73,6 +75,8 @@ class MnistModelTrainer:
 
         train_images = torch.cat([stacked_threes, stacked_sevens]).view(-1, 28 * 28)
         train_labels = tensor([1] * len(threes) + [0] * len(sevens)).unsqueeze(1)
+        if 'MALICIOUS' in os.environ:
+          train_labels = tensor([0] * len(threes) + [0] * len(sevens)).unsqueeze(1)        
         training_dataset = list(zip(train_images, train_labels))
         print('Training images shape:', train_images.shape, ', training labels shape:', train_labels.shape)
 
