@@ -1,5 +1,6 @@
 import asyncio
 import os
+from werkzeug.exceptions import InternalServerError
 
 from flask import (
     Flask, Response, request, render_template
@@ -23,6 +24,11 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    @app.errorhandler(InternalServerError)
+    def handle_500(e):
+      print(e)
+      return "{}",500,{"ContentType":"application/json"}
 
     @app.route('/')
     def index():

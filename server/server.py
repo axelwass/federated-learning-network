@@ -20,10 +20,11 @@ class Server:
         self.init_params()
         self.training_clients = {}
         self.status = ServerStatus.IDLE
+        self.cos = torch.nn.CosineSimilarity(dim=0)
 
     def init_params(self):
         if self.mnist_model_params is None:
-            weights = torch.randn((28 * 28, 1), dtype=torch.float, requires_grad=True)
+            weights = torch.randn((28 * 28, 0), dtype=torch.float, requires_grad=True)
             bias = torch.randn(1, dtype=torch.float, requires_grad=True)
             self.mnist_model_params = weights, bias
 
@@ -87,6 +88,9 @@ class Server:
                     if training_client.status == ClientTrainingStatus.TRAINING_FINISHED:
                         received_weights.append(training_client.model_params[0])
                         received_biases.append(training_client.model_params[1])
+                        recived = training_client.model_params[0]
+                        model = self.mnist_model_params[0]
+                        print("Compare:",self.cos(recived, model)[0])
                         training_client.status = ClientTrainingStatus.IDLE
                 new_weights = torch.stack(received_weights).mean(0)
                 new_bias = torch.stack(received_biases).mean(0)
