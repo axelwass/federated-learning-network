@@ -2,8 +2,9 @@ import asyncio
 import sys
 import aiohttp
 import torch
-
+import operator
 import numpy as np
+from functools import reduce
 
 from .utils import model_params_to_request_params
 from .federated_learning_config import FederatedLearningConfig
@@ -24,7 +25,7 @@ class Server:
 
     def init_params(self):
         if self.mnist_model_params is None:
-            weights = torch.randn((28 * 28, 1), dtype=torch.float, requires_grad=True)
+            weights = torch.randn(28 * 28, dtype=torch.float, requires_grad=True)
             bias = torch.randn(1, dtype=torch.float, requires_grad=True)
             self.mnist_model_params = weights, bias
 
@@ -88,8 +89,8 @@ class Server:
                     if training_client.status == ClientTrainingStatus.TRAINING_FINISHED:
                         received_weights.append(training_client.model_params[0])
                         received_biases.append(training_client.model_params[1])
-                        recived_params = tourch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,training_client.model_params[0].tolist()), training_client.model_params[1].tolist()]))
-                        server_params = tourch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,self.mnist_model_params[0].tolist()), self.mnist_model_params[1].tolist()]))
+                        recived_params = torch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,training_client.model_params[0].tolist()), training_client.model_params[1].tolist()]))
+                        server_params = torch.FloatTensor(reduce(operator.concat, [reduce(operator.concat,self.mnist_model_params[0].tolist()), self.mnist_model_params[1].tolist()]))
                         print("Distances:")
                         print("CosineSimilarity:",self.cos(recived_params, server_params).tolist())
                         print("Norm 1:", torch.cdist(recived_params.reshape(1,-1),server_params.reshape(1,-1),p=1))
