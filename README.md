@@ -1,5 +1,8 @@
 # Federated Learning Network
 
+This repository is a fork made to run an experiment over the Federation Learning Network. The details of the experimient are near the end of the document on the section "Robustness experiment".
+
+
 Provides a central node, and a client node implementation to build a Federated Learning network.
 The central node orchestrates the training of one or several models that is performed by the client nodes.
 Each client node has its own dataset to train a local model, and sends the result of the training to the 
@@ -174,6 +177,17 @@ You can change some training parameters (epochs, batch size and learning rate) a
       federated-learning-network/server/server.py start_training method
 
 In the future it'll be possible to do it from the central node's dashboard.
+
+## Robustness experiment
+
+To run the experiment first it is necesary to dowload the MINST dataset into the 'temp' directory with the code:
+
+    from fastai.vision.all import *
+    untar_data(URLs.MNIST_SAMPLE)
+
+After that you can use the 'start_experiment.sh' to start the cluster. You can train with MINST dataset from the web application in "localhost:5000", and then after some generations run the 'start_adversary.sh' and run the training with one adversary. The different metrics or distances are shown on the logs of the server, that an be seen by executing:
+    
+    docker logs server  
 
 ## Known issues
 There's no persistence implemented yet, so everytime you start servers & clients the model will be initialized with 
